@@ -1,0 +1,39 @@
+Gráficos e Análise dos Padrões
+Ao executar o código acima, serão gerados quatro gráficos. Cada um mostra a evolução da população (p_n) ao longo de 100 gerações (n) para um valor específico de k. A seguir, apresento a análise do padrão observado em cada caso.
+
+Caso 1: k = 2.5
+Observação do Gráfico:
+O gráfico mostrará que, após algumas poucas gerações iniciais de oscilação, a população rapidamente se estabiliza em um valor fixo.
+
+Comentário:
+Para k = 2.5, a sequência converge para um ponto fixo estável. Independentemente da população inicial (desde que entre 0 e 1), a população sempre se ajustará até atingir um equilíbrio. Neste caso, o valor de equilíbrio é p
+approx0.6. Isso significa que o sistema é previsível e estável; a população de insetos não cresce indefinidamente nem se extingue, mas se mantém em 60% da capacidade máxima do ambiente.
+
+Pn-> 1 - (1/k) = 1 - (1/2,5) = 0,6
+
+Caso 2: k = 3.3
+Observação do Gráfico:
+Aqui, a população não converge para um único valor. Em vez disso, após as gerações iniciais, ela começa a oscilar de forma regular e previsível entre dois valores distintos.
+
+Comentário:
+Este comportamento é conhecido como bifurcação de duplicação de período ou um ciclo de período 2. A população atinge um valor alto em uma geração e um valor baixo na geração seguinte, repetindo esse ciclo indefinidamente. O sistema ainda é previsível, mas agora seu equilíbrio não é um ponto fixo, e sim um ciclo entre dois pontos.
+
+Caso 3: k = 3.5
+Observação do Gráfico:
+O comportamento se torna ainda mais complexo. Após um período inicial de ajuste, a população começa a oscilar de forma regular entre quatro valores distintos.
+
+Comentário:
+O sistema sofreu outra bifurcação, passando de um ciclo de período 2 para um ciclo de período 4. O padrão de oscilação é mais complexo, mas ainda é periódico e, portanto, previsível. Se continuássemos a aumentar k lentamente, veríamos ciclos de período 8, 16, 32, e assim por diante, em um processo chamado "cascata de duplicação de período".
+
+Caso 4: k = 4.0
+Observação do Gráfico:
+O gráfico para k = 4.0 é drasticamente diferente. Não há nenhum padrão discernível ou repetição. Os valores da população parecem saltar erraticamente por todo o intervalo entre 0 e 1.
+
+Comentário:
+Este é o regime do caos determinístico. Embora a equação seja simples e determinística (cada valor depende estritamente do anterior), o comportamento a longo prazo é imprevisível.
+
+Aperiodicidade: A sequência nunca se repete.
+
+Sensibilidade às condições iniciais: Uma mudança minúscula na população inicial p_1 levaria a uma sequência de valores completamente diferente após poucas gerações.
+
+Isso significa que, para k = 4, é impossível prever a população a longo prazo. O sistema exibe um comportamento complexo e aparentemente aleatório, que é uma característica fundamental da teoria do caos.
